@@ -31,11 +31,11 @@ buttons = [
                 InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("👣sahip", url="https://t.me/@korsanfed"),
+                InlineKeyboardButton("🌱reklam", url="https://t.me/Alem_sohbet"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("🤖 grubuna özel bot için🤖", url="https//t.me/@ruhsuzbeyyy"),
             ]
          ]
 
@@ -49,7 +49,7 @@ async def search(client, query):
                 title="Deploy Your Own Radio Player",
                 thumb_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
                 photo_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @AsmSupport 👑</b>",
+                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@Ruhsuzbeyyy | @korsanfed 👑</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
@@ -60,7 +60,7 @@ async def search(client, query):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text=("✍️ Type An Video Name !"),
+            switch_pm_text=("✍️ Video adı yaz !"),
             switch_pm_parameter="help",
             cache_time=0
         )
@@ -91,7 +91,7 @@ async def search(client, query):
             await query.answer(
                 results=answers,
                 cache_time=0,
-                switch_pm_text=("Error: Search Timed Out!"),
+                switch_pm_text=("Error: Arama Zamanlanmış!"),
                 switch_pm_parameter="",
             )
 
